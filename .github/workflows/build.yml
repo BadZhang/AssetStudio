@@ -51,9 +51,11 @@ jobs:
         with:
           name: net7.0-${{ github.sha }}
           path: AssetStudio.GUI/bin/Release/net7.0-windows/publish
+          overwrite: true
 
       - name: Upload .Net8 CLI Artifact
         uses: actions/upload-artifact@v4
         with:
           name: net8.0-${{ github.sha }}
           path: AssetStudio.GUI/bin/Release/net8.0-windows/publish
+          overwrite: true
